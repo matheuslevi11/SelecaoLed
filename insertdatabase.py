@@ -10,7 +10,7 @@ dataset.dropna(inplace=True)
 
 
 try:
-  con = mysql.connector.connect(host='localhost', database='xibata', port='3306',user='root',password='root', auth_plugin='mysql_native_password')
+  con = mysql.connector.connect(host='localhost', database='dados_vacina', port='3306',user='root',password='root', auth_plugin='mysql_native_password')
   cursor = con.cursor()
 
   for index, row in dataset.iterrows():
